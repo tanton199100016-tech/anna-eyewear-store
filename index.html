@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="theme-color" content="#23b9b5" />
+    <title>Kính Mắt Anna – Thương hiệu kính mắt của sự tử tế</title>
+    <link rel="icon" href="public/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="promo-bar" aria-label="Ưu đãi nổi bật">
+        <button class="promo-arrow" data-promo-direction="prev" aria-label="Ưu đãi trước">‹</button>
+        <div class="promo-viewport">
+          <div class="promo-track" id="promoTrack">
+            <span>MUA 1 TẶNG 1</span>
+            <span>SALE 50%</span>
+            <span>THU CŨ ĐỔI MỚI</span>
+            <span>GỌNG KÍNH 1K</span>
+          </div>
+        </div>
+        <button class="promo-arrow" data-promo-direction="next" aria-label="Ưu đãi tiếp theo">›</button>
+      </div>
+
+      <header class="site-header" id="siteHeader">
+        <button class="header-icon menu-trigger" aria-label="Mở menu" aria-controls="drawer" aria-expanded="false">
+          <img src="public/assets/hambuger.svg" alt="" />
+        </button>
+        <a href="#top" class="brand" aria-label="Anna Eyeglasses – Trang chủ">
+          <img src="public/assets/logo.svg" alt="anna" />
+        </a>
+        <nav class="desktop-nav" aria-label="Điều hướng chính">
+          <a class="active" href="#top">Trang chủ</a>
+          <a href="#best-seller">Gọng kính</a>
+          <a href="#new-arrivals">Tròng kính</a>
+          <a href="#sunglasses">Kính râm</a>
+          <a href="#stores">Tìm cửa hàng</a>
+          <button class="more-link" type="button" aria-label="Xem thêm">Xem thêm <span>⌄</span></button>
+        </nav>
+        <div class="header-actions">
+          <button class="header-icon account-trigger" aria-label="Tài khoản">
+            <img src="public/assets/user.svg" alt="" />
+          </button>
+          <button class="header-icon search-trigger" aria-label="Tìm kiếm" aria-controls="searchPanel" aria-expanded="false">
+            <img src="public/assets/search.svg" alt="" />
+          </button>
+          <button class="header-icon cart-trigger" type="button" aria-label="Mở giỏ hàng" aria-controls="cartDrawer" aria-expanded="false">
+            <img src="public/assets/bag.svg" alt="" />
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="search-panel" id="searchPanel" aria-hidden="true">
+        <div class="search-inner">
+          <label for="searchInput">Bạn đang tìm gì?</label>
+          <div class="search-field">
+            <input id="searchInput" type="search" placeholder="Tìm gọng kính, kính râm..." autocomplete="off" />
+            <button type="button" id="searchSubmit" aria-label="Tìm kiếm">⌕</button>
+          </div>
+          <button type="button" class="search-close" id="searchClose">Đóng</button>
+        </div>
+      </div>
+
+      <aside class="drawer" id="drawer" aria-hidden="true">
+        <div class="drawer-backdrop" data-close-drawer></div>
+        <div class="drawer-panel">
+          <div class="drawer-head">
+            <img src="public/assets/logo.svg" alt="anna" />
+            <button class="drawer-close" data-close-drawer aria-label="Đóng menu">×</button>
+          </div>
+          <nav aria-label="Menu mobile">
+            <a href="#top">Trang chủ</a>
+            <a href="#best-seller">Gọng kính</a>
+            <a href="#new-arrivals">Tròng kính</a>
+            <a href="#sunglasses">Kính râm</a>
+            <a href="#stores">Tìm cửa hàng</a>
+            <a href="#collections">Bộ sưu tập</a>
+          </nav>
+          <div class="drawer-note">Mỗi lựa chọn nhỏ là một bước trên hành trình tử tế.</div>
+        </div>
+      </aside>
+
+      <main id="top">
+        <section class="hero" aria-label="Banner Anna">
+          <div class="hero-slides" id="heroSlides">
+            <a class="hero-slide is-active" href="#new-arrivals">
+              <picture>
+                <source media="(max-width: 767px)" srcset="public/assets/hero-mobile-1.png" />
+                <img src="public/assets/hero-desktop-1.png" alt="Bộ sưu tập B2 Campus Icon" />
+              </picture>
+            </a>
+            <a class="hero-slide" href="#best-seller">
+              <picture>
+                <source media="(max-width: 767px)" srcset="public/assets/hero-mobile-2.png" />
+                <img src="public/assets/hero-desktop-2.png" alt="Ưu đãi mua một tặng một" loading="lazy" />
+              </picture>
+            </a>
+            <a class="hero-slide" href="#collections">
+              <picture>
+                <source media="(max-width: 767px)" srcset="public/assets/hero-mobile-3.webp" />
+                <img src="public/assets/hero-desktop-3.webp" alt="Bộ sưu tập kính Anna" loading="lazy" />
+              </picture>
+            </a>
+          </div>
+          <div class="hero-controls" aria-label="Chuyển banner">
+            <button class="hero-dot is-active" data-slide="0" aria-label="Banner 1"></button>
+            <button class="hero-dot" data-slide="1" aria-label="Banner 2"></button>
+            <button class="hero-dot" data-slide="2" aria-label="Banner 3"></button>
+          </div>
+        </section>
+
+        <section class="product-section" id="best-seller">
+          <div class="section-heading centered">
+            <h2>BEST SELLER <span>(SẢN PHẨM BÁN CHẠY)</span></h2>
+            <div class="category-tabs" role="tablist" aria-label="Danh mục bán chạy">
+              <button class="category-tab active" data-category="frames" role="tab" aria-selected="true">Gọng kính</button>
+              <button class="category-tab" data-category="lenses" role="tab" aria-selected="false">Tròng kính</button>
+              <button class="category-tab" data-category="sunglasses" role="tab" aria-selected="false">Kính râm</button>
+            </div>
+          </div>
+          <div class="product-track" data-track="best" aria-label="Sản phẩm bán chạy"></div>
+          <a class="outline-button" href="#new-arrivals">XEM TOÀN BỘ SẢN PHẨM</a>
+        </section>
+
+        <section class="glass-break" aria-label="Tầm nhìn rõ hơn">
+          <img src="public/assets/glass.webp" alt="Tròng kính trong suốt" loading="lazy" />
+        </section>
+
+        <section class="product-section new-section" id="new-arrivals">
+          <div class="section-heading centered">
+            <h2>SẢN PHẨM MỚI</h2>
+            <div class="category-tabs" role="tablist" aria-label="Danh mục sản phẩm mới">
+              <button class="category-tab active" data-category="frames" role="tab" aria-selected="true">Gọng kính</button>
+              <button class="category-tab" data-category="lenses" role="tab" aria-selected="false">Tròng kính</button>
+              <button class="category-tab" data-category="sunglasses" role="tab" aria-selected="false">Kính râm</button>
+            </div>
+          </div>
+          <div class="product-track" data-track="new" aria-label="Sản phẩm mới"></div>
+          <a class="outline-button" href="#best-seller">XEM TOÀN BỘ SẢN PHẨM</a>
+        </section>
+
+        <section class="feedback-section" id="sunglasses">
+          <div class="section-heading centered"><h2>FEEDBACK</h2></div>
+          <div class="feedback-rail" id="feedbackRail"></div>
+          <div class="rail-actions">
+            <button class="rail-arrow" data-feedback="prev" aria-label="Ảnh trước">←</button>
+            <button class="rail-arrow" data-feedback="next" aria-label="Ảnh tiếp theo">→</button>
+          </div>
+        </section>
+
+        <section class="stores-section" id="stores">
+          <div class="stores-image-wrap">
+            <img src="public/assets/stores.png" alt="Không gian cửa hàng Anna" loading="lazy" />
+          </div>
+          <div class="stores-copy">
+            <h2>GHÉ THĂM HỆ THỐNG</h2>
+            <a class="store-link" href="#footer">Tìm cửa hàng gần nhất</a>
+          </div>
+        </section>
+
+        <section class="collections-section" id="collections">
+          <div class="section-heading centered"><h2>COLLECTION</h2></div>
+          <div class="collections-grid">
+            <a class="collection-card tall" href="#best-seller"><img src="public/assets/collection-1.png" alt="The Titan" loading="lazy" /><span>THE TITAN</span><small>XEM THÊM <b>↗</b></small></a>
+            <a class="collection-card" href="#best-seller"><img src="public/assets/collection-2.png" alt="Keo lỳ" loading="lazy" /><span>KEO LỲ</span><small>XEM THÊM <b>↗</b></small></a>
+            <a class="collection-card" href="#best-seller"><img src="public/assets/collection-3.png" alt="The Titan" loading="lazy" /><span>THE TITAN</span><small>XEM THÊM <b>↗</b></small></a>
+          </div>
+          <a class="outline-button" href="#best-seller">XEM THÊM</a>
+        </section>
+
+        <section class="journey-section">
+          <img class="journey-piece journey-left" src="public/assets/journey-left.png" alt="" loading="lazy" />
+          <img class="journey-piece journey-right" src="public/assets/journey-right.png" alt="" loading="lazy" />
+          <img class="journey-piece journey-mobile" src="public/assets/journey-mobile.png" alt="" loading="lazy" />
+          <div class="journey-content">
+            <img src="public/assets/journey-center.png" alt="Anna – hành trình tử tế" loading="lazy" />
+            <p>Mỗi đơn hàng mua tại Anna tức là bạn đang cùng Anna bước đi trên <strong>Hành trình tử tế</strong>, mang mắt sáng đến mọi miền đất nước và giúp đỡ nhiều người kém may mắn.</p>
+            <a href="https://www.facebook.com/annaeyeglasses/" target="_blank" rel="noreferrer">TÌM HIỂU THÊM <span>↗</span></a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="footer">
+        <div class="footer-top">
+          <div class="footer-feedback">
+            <h3>Góp ý</h3>
+            <p>Anna luôn lắng nghe để tốt hơn mỗi ngày. Hãy để lại góp ý để chúng tôi cải thiện sản phẩm và dịch vụ.</p>
+            <button class="solid-button feedback-trigger" type="button">ĐÓNG GÓP Ý KIẾN</button>
+          </div>
+          <div class="footer-contact">
+            <div><span>Hotline</span><a href="tel:19000359">19000359</a></div>
+            <div><span>Email</span><a href="mailto:marketing@kinhmatanna.com">marketing@kinhmatanna.com</a></div>
+          </div>
+          <div class="footer-socials"><a href="tel:19000359" aria-label="Gọi hotline">◕</a><a href="https://www.facebook.com/annaeyeglasses/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="#top" aria-label="Website">◎</a><a href="#top" aria-label="Instagram">◎</a></div>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <h3>Giới thiệu</h3>
+            <p><strong>CÔNG TY CỔ PHẦN ALC PHÚ QUÝ</strong></p>
+            <p>Địa chỉ trụ sở chính: Số 10 Xuân Thủy, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam</p>
+            <p>Người đại diện theo pháp luật: PHẠM XUÂN HIẾU</p>
+            <p>Mã số doanh nghiệp: 0110489312 do Sở Tài Chính TP Hà Nội cấp lần đầu ngày 27/09/2023</p>
+          </div>
+          <div><h3>Chính sách</h3><a href="#footer">Chính sách thanh toán</a><a href="#footer">Chính sách bảo hành, đổi trả</a><a href="#footer">Chính sách vận chuyển</a><a href="#footer">Chính sách bảo mật</a><a href="#footer">Chính sách khách hàng</a><a href="#footer">Thông tin về giá</a></div>
+          <div><h3>Danh mục</h3><a href="#collections">Bộ Sưu Tập Keo Lỳ</a><a href="#collections">Tết An-Chill</a><a href="#collections">The Titan</a><a href="#best-seller">Gọng Kính</a><a href="#new-arrivals">Tròng Kính</a><a href="#sunglasses">Kính râm</a></div>
+          <div class="footer-commerce"><h3>Thương mại điện tử</h3><a href="#footer">Mua sắm an toàn</a><a href="#footer">Đã thông báo Bộ Công Thương</a><img src="public/assets/logo.svg" alt="Anna Eyeglasses" /></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 Anna Eyeglasses</span><span>Thiết kế với sự tử tế</span></div>
+      </footer>
+
+      <div class="cart-toast" id="cartToast" role="status" aria-live="polite">Đã thêm vào giỏ hàng</div>
+
+      <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-backdrop" data-close-cart></div>
+        <section class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+          <header class="cart-head">
+            <div>
+              <p class="eyebrow">ANNA EDIT</p>
+              <h2 id="cartTitle">Giỏ hàng <span id="cartHeaderCount">0</span></h2>
+            </div>
+            <button class="drawer-close" type="button" data-close-cart aria-label="Đóng giỏ hàng">×</button>
+          </header>
+          <div class="cart-shipping-note" id="cartShippingNote">Miễn phí vận chuyển cho đơn từ 700.000đ</div>
+          <div class="cart-items" id="cartItems"></div>
+          <div class="cart-empty" id="cartEmpty" hidden>
+            <div class="cart-empty-mark">◎</div>
+            <h3>Giỏ hàng đang chờ bạn</h3>
+            <p>Chọn một dáng kính vừa mắt, Anna giữ lại cho bạn.</p>
+            <button class="outline-button" type="button" data-close-cart>TIẾP TỤC XEM KÍNH</button>
+          </div>
+          <footer class="cart-footer" id="cartFooter">
+            <div class="cart-summary-row"><span>Tạm tính</span><strong id="cartSubtotal">0đ</strong></div>
+            <div class="cart-summary-row"><span>Vận chuyển</span><strong id="cartShipping">—</strong></div>
+            <div class="cart-total-row"><span>Tổng cộng</span><strong id="cartTotal">0đ</strong></div>
+            <button class="solid-button checkout-trigger" id="checkoutTrigger" type="button">TIẾN HÀNH ĐẶT HÀNG <span>↗</span></button>
+            <p class="cart-secure-note">Thanh toán an toàn · Đổi trả trong 7 ngày</p>
+          </footer>
+        </section>
+      </aside>
+
+      <div class="product-detail-modal" id="productDetailModal" aria-hidden="true">
+        <div class="product-detail-backdrop" data-close-product></div>
+        <section class="product-detail-panel" role="dialog" aria-modal="true" aria-labelledby="productDetailTitle">
+          <button class="product-detail-close" type="button" data-close-product aria-label="Đóng chi tiết sản phẩm">×</button>
+          <div id="productDetailContent"></div>
+        </section>
+      </div>
+
+      <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-checkout></div>
+        <form class="checkout-form" id="checkoutForm">
+          <button class="modal-close" type="button" data-close-checkout aria-label="Đóng">×</button>
+          <p class="eyebrow">ANNA CARE</p>
+          <h2>Hoàn tất đơn hàng</h2>
+          <p class="checkout-intro">Để Anna chuẩn bị gọng kính thật vừa vặn cho bạn.</p>
+          <div class="checkout-summary" id="checkoutSummary"></div>
+          <label>Họ tên<input name="customer_name" required placeholder="Tên của bạn" autocomplete="name" /></label>
+          <label>Số điện thoại<input name="phone" required inputmode="tel" placeholder="09xx xxx xxx" autocomplete="tel" /></label>
+          <label>Địa chỉ nhận hàng<textarea name="address" required rows="3" placeholder="Số nhà, đường, phường/xã..." autocomplete="street-address"></textarea></label>
+          <label>Ghi chú <span>(tuỳ chọn)</span><textarea name="note" rows="2" placeholder="Ví dụ: gọi trước khi giao"></textarea></label>
+          <button class="solid-button" type="submit">XÁC NHẬN ĐẶT HÀNG <span>↗</span></button>
+          <p class="form-success" id="checkoutSuccess" hidden></p>
+        </form>
+      </div>
+
+      <div class="feedback-modal" id="feedbackModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-feedback></div>
+        <form class="feedback-form" id="feedbackForm">
+          <button type="button" class="modal-close" data-close-feedback aria-label="Đóng">×</button>
+          <p class="eyebrow">GÓP Ý</p>
+          <h2>Chia sẻ cùng Anna</h2>
+          <p>Điều gì sẽ giúp trải nghiệm của bạn tốt hơn?</p>
+          <label>Họ tên<input name="name" required placeholder="Tên của bạn" /></label>
+          <label>Email<input type="email" name="email" required placeholder="you@example.com" /></label>
+          <label>Lời nhắn<textarea name="message" required rows="4" placeholder="Viết góp ý của bạn..."></textarea></label>
+          <button class="solid-button" type="submit">GỬI GÓP Ý</button>
+          <p class="form-success" id="formSuccess" hidden>Cảm ơn bạn đã góp ý cho Anna.</p>
+        </form>
+      </div>
+    </div>
+    <script src="public/supabase-config.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
